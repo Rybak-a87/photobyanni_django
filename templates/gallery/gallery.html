@@ -1,0 +1,54 @@
+<!--Подключение шаблона и static-->
+{% extends "base/base.html" %}
+{% load static %}
+
+
+<!--Заголовок этой страницы-->
+{% block title %}Галерея{% endblock title %}
+
+<!--Блок main-->
+{% block main %}
+<ul class='main__list'>
+    {% if albums %}
+        {% for album in albums %}
+        <a href="#" class="link main__list-link">
+            <li class='main__list-item'>
+                <img src="{{ album.cover.url }}" alt="{{ album.title }}" class="main__list-item_img">
+                <div class="main__descr-wrap">
+                    <p class="main__list-descr">{{ album.title }}</p>
+                </div>
+            </li>
+        </a>
+        {% endfor %}
+    {% else %}
+    <h1>Даннах нет</h1>
+    {% endif %}
+</ul>
+<div class="main__inner-container hide">
+    <div class="main__inner-wrapper">
+        <h2 class="main__inner-title"></h2>
+        <ul class="main__list-inner">
+        </ul>
+        <div class="main__inner-btn-wrapper">
+            <span class="main__inner-span"></span>
+            <button class="main__inner-btn">Назад в галерею</button>
+        </div>
+    </div>
+    <ul class="main__inner-list">
+    </ul>
+        <div class="Overlay">
+              <div class="Modal">
+                <img class="modal__img" src="" alt="" id=""/>
+                <div class="modal__btns">
+                  <button class="modal__btn modal__btn--prev">	<span>	&#171; </span> </button>
+                  <button class="modal__btn modal__btn--next"> <span>	&#187; </span> </button>
+                </div>
+              </div>
+            </div>
+        </div>
+</div>
+{% endblock main %}
+
+{% block scripts %}
+    <script src="{% static 'gallery/js/index.js' %}" type="module"></script>
+{% endblock scripts %}

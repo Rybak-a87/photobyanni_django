@@ -1,1 +1,6 @@
 .idea/
+django_env/
+temp_files/
+photobyanni_db.sqlite3
+*.pyc
+

@@ -1,0 +1,29 @@
+<!--Подключение шаблона и static-->
+{% extends "about/about_base.html" %}
+{% load static %}
+
+
+<!--Заголовок этой страницы-->
+{% block title %}О себе{% endblock title %}
+
+
+<!--Подключение стилей для этой страницы-->
+{% block styles %}
+<link rel="stylesheet" href="{% static 'about/css/about.css' %}">
+{% endblock styles %}
+
+
+<!--Блок main-->
+{% block content_about %}
+{% if about_me %}
+<img class="about__pic" src="{{ about_me.my_photo.url }}" alt="My photo">
+<div class="about__descr-section">
+    <h2 class="about__descr">{{ about_me.profession }}</h2>
+    <h3>{{ about_me.my_name }}</h3>
+    <p class="about__descr-about_me">{{ about_me.about_me }}</p>
+<!--    <button class="about__more" type="button">more<span> ></span> </button>-->
+</div>
+{% else %}
+    <h1 class="services__title">Данных нет</h1>
+{% endif %}
+{% endblock content_about %}

@@ -1,0 +1,91 @@
+.about {
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 67%
+}
+
+.about__inner-container {
+  width: 80%;
+  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 30px;
+}
+
+.about__close-btn {
+  align-self: flex-end;
+  padding: 12px 16px;
+  position: absolute;
+  transform: translate(6px, -6px);
+  background: rgb(241, 170, 103);
+  color: #fff;
+  border: none;
+}
+
+.about__close-btn:hover {
+  background: #fff;
+  color: #000;
+}
+
+.about__descr {
+  display: inline-block;
+  margin-top: 18px;
+}
+
+.about__more {
+  background: rgb(241, 170, 103);
+  color: #fff;
+  border: none;
+  padding: 12px 0;
+  width: 70px;
+  text-transform: uppercase;
+}
+
+.about__more:hover {
+  background: rgb(109, 106, 106);
+  width: 80px;
+  transition: 0.5s ease-out;
+  padding-right: 2px;
+}
+
+.about__more:hover span {
+  margin-left: 8px;
+  transition: 0.5s ease-out;
+}
+
+.hide {
+  display: none;
+}
+
+.about__descr-about_me {
+margin: 10px;
+text-align: justify;
+}
+
+@media (min-width: 768px) {
+  .about__inner-container {
+    width: 90%;
+    flex-direction: top;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about__pic {
+    /*width: 310px;*/
+    height: 260px;
+  }
+
+  .about__descr-section {
+    width: 80%;
+  }
+
+  .about__descr {
+    margin: 5px;
+  }
+}
