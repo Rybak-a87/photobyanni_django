@@ -39,7 +39,7 @@ class Gallery(models.Model):
         Albums, on_delete=models.CASCADE, verbose_name="Альбом"
     )
     photo = models.ImageField(verbose_name="Фото", upload_to="gallery/")
-    # date = models.DateField(auto_now=Trsue)
+    date = models.DateField(auto_now=True)
 
     def __str__(self):
         return self.name_album.title
