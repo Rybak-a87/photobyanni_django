@@ -1,0 +1,22 @@
+<!--Подключение шаблона и static-->
+{% extends "about/about_base.html" %}
+{% load static %}
+
+
+<!--Заголовок этой страницы-->
+{% block title %}Услуги{% endblock title %}
+
+
+<!--Подключение стилей для этой страницы-->
+{% block styles %}
+<link rel="stylesheet" href="{% static 'about/css/services.css' %}">
+{% endblock styles %}
+
+
+<!--Блок main-->
+{% block main %}
+
+<h2 class="services__title" align="center" style="color: #8df6f6">На данный момент этот раздел находится на стадии разработки...</h2>
+<h2 class="services__title" align="center" style="color: #8df6f6">Приносим свои извенения...</h2>
+
+{% endblock main %}

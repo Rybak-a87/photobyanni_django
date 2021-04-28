@@ -1,0 +1,15 @@
+<!--Подключение шаблона и static-->
+{% extends "base/base.html" %}
+
+<!--Блок main-->
+{% block main %}
+<div class="container about">
+    <button class="about__close-btn" type="button">X</button>
+    <div class="about__inner-container">
+
+        {% block content_about %}
+        {% endblock content_about %}
+
+    </div>
+</div>
+{% endblock main %}

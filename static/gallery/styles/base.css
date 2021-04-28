@@ -1,0 +1,44 @@
+html {
+  box-sizing: border-box;
+  font-family: "Advent Pro", "sans-serif";
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 300;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.9);
+  margin: 0 auto;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.link {
+  cursor: pointer;
+  text-decoration: none;
+}

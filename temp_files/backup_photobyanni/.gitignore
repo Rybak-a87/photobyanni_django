@@ -1,0 +1,9 @@
+.idea/
+django_env/
+temp_files/
+media/about/
+media/cover/
+media/gallery/
+photobyanni_db.sqlite3
+*.pyc
+

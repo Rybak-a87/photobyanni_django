@@ -1,5 +1,5 @@
 ## Сайт фотографа
-сайт временно размещен на <a href="https://pure-fjord-89371.herokuapp.com/">heroku.com</a>
+# Довожу сайт до ума
 >#### Используется:
 > - _Django_
 > - _Rest framework_

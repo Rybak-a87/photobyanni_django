@@ -1,0 +1,30 @@
+<!--Подключение шаблона и static-->
+{% extends "about/about_base.html" %}
+<!--{% load static %}-->
+
+
+<!--Заголовок этой страницы-->
+{% block title %}Обратится к фотографу{% endblock title %}
+
+
+<!--Подключение стилей для этой страницы-->
+{% block styles %}
+<link rel="stylesheet" href="{% static 'about/css/contacts.css' %}">
+{% endblock styles %}
+
+
+{% block content_about %}
+<form class="services__form" action="#" method="POST">
+    {% csrf_token %}
+    {{ form.name }}
+    {{ form.email }}
+    {{ form.phone }}
+    {{ form.theme }}
+    {{ form.text }}
+
+    <div class="form__btn-wrapper">
+        <button class="form__btn" type="submit">Send message</button>
+        <p class="form__description"></p>
+    </div>
+</form>
+{% endblock content_about %}

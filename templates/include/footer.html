@@ -1,25 +1,43 @@
-<!--{% load static %}-->
-<footer class="footer">
-    <div class="footer__dark-line"></div>
-    <div class="container footer__container">
-        <ul class="footer__list">
-            <li class="footer__list-item">
-                <a class="footer__list-link link" href="https://www.facebook.com/anni.won.9">
-                    <svg class="footer__icon">
-                        <image href="{% static 'gallery/images/icons/FB.png' %} " style="width: 17px"></image>
-                    </svg>
-                    <p class="visually-hidden">facebook</p>
-                </a>
-            </li>
-            <li class="footer__list-item">
-                <a class="footer__list-link link" href="https://www.instagram.com/annie_sunnyphoto/">
-                    <svg class="footer__icon">
-                        <image href="{% static 'gallery/images/icons/Instagram.png' %}" style="width: 17px"></image>
-                    </svg>
-                    <p class="visually-hidden">tweeter</p>
-                </a>
-            </li>
-        </ul>
-        <p class="footer__descr">©  2021 . <a class="link" href="#">Privacy Policy</a></p>
-    </div>
-</footer>
+<div class="footer__dark-line"></div>
+<div class="container footer__container">
+    <ul class="footer__list">
+        <li class="footer__list-item"><a class="footer__list-link" href="#">
+        <!-- <object type="image/svg+xml" data="./images/icons/facebook.svg" class="footer__svg"></object> -->
+            <svg class="footer__icon">
+                <use href="./images/icons/sprite.svg#icon-facebook"></use>
+            </svg>
+            <p class="visually-hidden">facebook</p></a>
+        </li>
+        <li class="footer__list-item"><a class="footer__list-link" href="#">
+            <svg class="footer__icon">
+                <use href="./images/icons/sprite.svg#icon-twitter"></use>
+            </svg>
+            <p class="visually-hidden">tweeter</p></a>
+        </li>
+        <li class="footer__list-item"><a class="footer__list-link" href="#">
+            <svg class="footer__icon">
+                <use href="./images/icons/sprite.svg#icon-google-plus"></use>
+            </svg>
+            <p class="visually-hidden">google+</p></a>
+        </li>
+        <li class="footer__list-item"><a class="footer__list-link" href="#">
+            <svg class="footer__icon">
+                <use href="./images/icons/sprite.svg#icon-vimeo"></use>
+            </svg>
+            <p class="visually-hidden">vimeo</p></a>
+        </li>
+        <li class="footer__list-item"><a class="footer__list-link" href="#">
+            <svg class="footer__icon">
+                <use href="./images/icons/sprite.svg#icon-youtube"></use>
+            </svg>
+            <p class="visually-hidden">you-tube</p></a>
+        </li>
+        <li class="footer__list-item"><a class="footer__list-link" href="#">
+            <svg class="footer__icon">
+                <use href="./images/icons/sprite.svg#icon-pinterest"></use>
+            </svg>
+            <p class="visually-hidden">pinterest</p></a>
+        </li>
+    </ul>
+    <p class="footer__descr">©  2020 . <a href="#">Looking for job</a></p>
+</div>

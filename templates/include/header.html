@@ -1,11 +1,10 @@
-<!--{% load static %}-->
+<div class= "bg-image"></div>
 <header class="header container">
     <div class="header__container">
-        <div class="logo__container">
-            <a href="{% url 'gallery:gallery_page' %}" class="logo link">
-                PHOTO BY ANNI
-            <span class="logo__descr">LIFESTYLE ФОТОГРАФ</span></a>
-        </div>
+        <a href="{% url 'gallery:gallery_page' %}" class="logo link">
+            PHOTO BY ANNI
+            <span class="logo__descr link">LIFESTYLE ФОТОГРАФ</span>
+        </a>
         <p class="header__description">Профессиональный фотограф <span>в стиле </span> lifestyle.</p>
     </div>
     {% include "include/sitebar.html" %}
